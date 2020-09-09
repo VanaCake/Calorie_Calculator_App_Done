@@ -73,7 +73,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pattyGroup" />
 
-    <RadioButton
+    <CheckBox
         android:id="@+id/veggie1B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -81,12 +81,13 @@
         android:onClick="checkVeggie1"
         android:text="@string/veggie1"
         android:textColor="@android:color/background_dark"
-        android:textSize="20sp"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/veggie2B"
         app:layout_constraintEnd_toStartOf="@+id/veggie2B"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/veggie2B" />
 
-    <RadioButton
+    <CheckBox
         android:id="@+id/veggie2B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,13 +95,13 @@
         android:onClick="checkVeggie2"
         android:text="@string/veggie2"
         android:textColor="@android:color/background_dark"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/sauceSB"
         app:layout_constraintEnd_toStartOf="@+id/veggie3B"
         app:layout_constraintStart_toEndOf="@+id/veggie1B"
         app:layout_constraintTop_toBottomOf="@+id/cheeseCB" />
 
-    <RadioButton
+    <CheckBox
         android:id="@+id/veggie3B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -108,7 +109,7 @@
         android:onClick="checkVeggie3"
         android:text="@string/veggie3"
         android:textColor="@android:color/background_dark"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="@+id/veggie2B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/veggie2B"
@@ -118,15 +119,17 @@
         android:id="@+id/sauceSB"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
         app:layout_constraintBottom_toTopOf="@+id/calTV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/veggie1B" />
+        app:layout_constraintTop_toBottomOf="@+id/sauceTV" />
 
     <TextView
         android:id="@+id/sauceTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/sauce"
         app:layout_constraintBottom_toTopOf="@+id/calTV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -136,7 +139,7 @@
         android:id="@+id/calTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="100dp"
         android:fontFamily="@font/adamina"
         android:text="@string/cal"
         android:textColor="@android:color/background_dark"

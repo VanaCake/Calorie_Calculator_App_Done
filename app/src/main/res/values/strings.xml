@@ -10,4 +10,5 @@
     <string name="cal">Calories: 204.0</string>
     <string name="title">Vana\'s Burgers!</string>
     <string name="calB">Get Cals</string>
+    <string name="sauce">__TBSP of Secret Sauce</string>
 </resources>

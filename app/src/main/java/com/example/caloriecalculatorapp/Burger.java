@@ -67,8 +67,17 @@ public class Burger {
         if(veg3){temp += VEGGIE3CAL;}
         return temp;
     }
-    public void yesNoVeggie1(){veg1 = true;}
-    public void yesNoVeggie2(){veg2 = true;}
-    public void yesNoVeggie3(){veg3 = true;}
+    public void yesNoVeggie1(){
+        if(veg1){veg1 = false;}
+        else{veg1 = true;}
+    }
+    public void yesNoVeggie2(){
+        if(veg2){veg2 = false;}
+        else{veg2 = true;}
+    }
+    public void yesNoVeggie3(){
+        if(veg3){veg3 = false;}
+        else{veg3 = true;}
+    }
 
 }

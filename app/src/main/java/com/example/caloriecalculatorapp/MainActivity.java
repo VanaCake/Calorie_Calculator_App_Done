@@ -16,8 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Burger b;
     private TextView caloriesTV, sauceCalTV;
     private RadioGroup pattyG;
-    private RadioButton veggie1, veggie2, veggie3;
-    private CheckBox c;
+    private CheckBox c, veggie1, veggie2, veggie3;
     private SeekBar s;
     private double saucee;
 
@@ -29,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
         b = new Burger();
         caloriesTV = (TextView) findViewById(R.id.calTV);
         pattyG = (RadioGroup) findViewById(R.id.pattyGroup);
-        veggie1 = (RadioButton) findViewById(R.id.veggie1B);
-        veggie2 = (RadioButton) findViewById(R.id.veggie2B);
-        veggie3 = (RadioButton) findViewById(R.id.veggie3B);
+        veggie1 = (CheckBox) findViewById(R.id.veggie1B);
+        veggie2 = (CheckBox) findViewById(R.id.veggie2B);
+        veggie3 = (CheckBox) findViewById(R.id.veggie3B);
         c = (CheckBox) findViewById(R.id.cheeseCB);
         s = (SeekBar) findViewById(R.id.sauceSB);
         sauceCalTV = (TextView) findViewById(R.id.sauceTV);
@@ -60,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                double sCal = (double) (s.getProgress() * 0.01 * 300);
-                sauceCalTV.setText(String.valueOf(sCal));
+                double sCal = (double) (s.getProgress() * 0.01 * 5);
+                sauceCalTV.setText((String.valueOf(sCal)) + "TBSP of Secret Sauce");
                 saucee = sCal;
             }
 
