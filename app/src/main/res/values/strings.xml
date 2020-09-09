@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Calorie Calculator App</string>
+    <string name="patty1">Beef Patty</string>
+    <string name="patty2">Chicken Patty</string>
+    <string name="patty3">Veggie Patty</string>
+    <string name="cheeseString">Cheese</string>
+    <string name="veggie1">Lettuce</string>
+    <string name="veggie2">Tomato</string>
+    <string name="veggie3">Onion</string>
+    <string name="cal">Calories: 204.0</string>
+    <string name="title">Vana\'s Burgers!</string>
+    <string name="calB">Get Cals</string>
 </resources>
