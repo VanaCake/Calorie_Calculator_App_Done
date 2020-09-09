@@ -36,12 +36,12 @@ public class Burger {
 
     public void setPatty(int p){
         if(p == PATTY2){patty = PATTY2;}
-        if(p == PATTY3){patty = PATTY3;}
+        else if(p == PATTY3){patty = PATTY3;}
         else{patty = PATTY1;}
     }
     public Double getPattyCal(){
         if(patty == PATTY2){return PATTY2CAL;}
-        if(patty == PATTY3){return PATTY3CAL;}
+        else if(patty == PATTY3){return PATTY3CAL;}
         return PATTY1CAL;
     }
 
